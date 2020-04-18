@@ -17,6 +17,7 @@ POST "/doctors/register_patient" → For Registration of Patients, Fields Requir
 
 POST "/patients/:id/create_report" → For Creating reports, Fields Required : status, Need Token of Logged in Doctor in headers of request
 
-GET "/patients/:id/all_reports" → For Fetching reports of specific patient, Reports are ordered by latest to oldest.
+GET "/patients/:id/all_reports" → For Fetching reports of specific patient, Reports are ordered by oldest to latest.
 
-GET "/reports/:status" → For Fetching reports by status, Reports are ordered by latest to oldest.
+GET "/reports/:status" → For fetching all the reports of all the patients filtered by a specific status
+
